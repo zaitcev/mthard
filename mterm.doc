@@ -1,0 +1,10 @@
+/h  -  use hardware communications (otherwise - BIOS int 14h)
+
+/c  -  43 lines switch enabled
+/s  -  50 lines switch enabled
+
+/1 /2 /3 /4  -  comm. port number. In /h mode only.
+       Note that comm. port parameters aren't setted up by this key.
+       Use this with DOS MODE.
+
+/i5 /i7      -  IRQ number. Use this with /1..4 options.
