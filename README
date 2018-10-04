@@ -1,0 +1,18 @@
+The MISS terminal was a firmware replacement for Videoton VT-52xxx
+line of terminals. They used an Intel 8080 microprocessor. The factory
+firmware was exceedingly slow and buggy, so late V. Butenko wrote a
+replacement, optimized to work with his OS MISS. In particular,
+the X-ON/X-OFF protocol worked reliably on it, so the OS didn't have
+to insert any pad characters after long operations, such as line
+insert/delete. The screen control protocol was generally compatible
+with Videoton VT-52xxx and VT-340 series, but used "MISS Code"
+for Cyrillic characters instead of KOI-8. Its lower half corresponded
+to KOI-7, with lowercase characters shifted accordinly. The original
+control seqences of VT-340 did not have any Western analog (not even
+the French Minitel).
+
+This program MTHARD was a software emulator of MISS terminal for IBM PC.
+It was emulating "the hardware terminal", as opposing to the abstract
+terminal layer in MISS. This way the emulator was compatible with
+existing installations where kernels didn't have a "null" or pass-
+through terminal. This is why it's not named "MTSOFT" or "MTFIRM".
